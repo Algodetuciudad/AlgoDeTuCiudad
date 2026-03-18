@@ -9,16 +9,16 @@ function Footer(){
 
           <div>
             <h4>Algo de tu Ciudad</h4>
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
-            <a href="#">Publicidad</a>
+            <a href="https://www.instagram.com/algodesanisidro/">Nosotros</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Algodetuciudad@gmail.com">Contacto</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Algodetuciudad@gmail.com">Publicidad</a>
           </div>
 
           <div>
             <h4>Secciones</h4>
-            <a href="#">San Isidro</a>
-            <a href="#">San Miguel</a>
-            <a href="#">Comunidad</a>
+            <a href="/sanIsidro">San Isidro</a>
+            <a href="/sanMiguel">San Miguel</a>
+            
           </div>
 
         </div>
