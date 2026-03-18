@@ -1,0 +1,198 @@
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px;
+}
+:root {
+  --verde: #1B3B22;
+  --crema: #F2EFE2;
+  --dorado: #D4B74D;
+  --dorado-oscuro: #A68A42;
+}
+.grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+
+}
+
+.card{
+
+background:var(--verde);
+border-radius:10px;
+overflow:hidden;
+cursor:pointer;
+position:relative;
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+
+}
+
+.card img{
+width: 100%; /* Ocupa todo el ancho de su columna */
+  height: 200px; /* Define una altura fija estándar para todas */
+  object-fit: cover; /* El truco mágico: recorta la imagen sin estirarla */
+  border-radius: 8px; /* Opcional: para que coincida con tus bordes redondeados */
+}
+
+.card h3{
+padding:15px;
+color: var(--crema)
+}
+
+.date-badge{
+
+position:absolute;
+
+top:8px;
+right:8px;
+
+background:#164123;
+color:white;
+
+padding:5px 10px;
+
+font-size:12px;
+font-weight:600;
+
+border-radius:12px;
+
+font-family:"Maden";
+
+box-shadow:0 2px 6px rgba(0,0,0,0.25);
+
+z-index:3;
+
+}
+.hero h1{
+font-size:70px;
+}
+
+.hero{
+  height:90vh;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-end; /* lo baja */
+}
+
+.hero-content{
+  width:100%;
+  
+}
+.hero-content2{
+  width:100%;
+  text-align:right;
+}
+
+.hero-title{
+
+  
+
+  padding:30px 60px;
+
+  color:white;
+
+  font-size:4rem;
+
+  background: color-mix(in srgb, var(--verde), transparent 50%);
+
+  backdrop-filter: blur(3px);
+
+  transition: all 0.4s ease;
+
+
+}
+.hero-title span{
+
+  font-family:'Symphony',serif;
+    color:var(--dorado);
+}
+/* animación */
+.container{
+
+padding:0px 60px 40px 60px;
+
+}
+
+/* TITULO */
+
+.section-title{
+
+font-family:"Maden";
+font-size:34px;
+
+display:flex;
+align-items:center;
+gap:15px;
+
+}
+
+.section-title::before,
+.section-title::after{
+
+content:"";
+
+flex:1;
+height:2px;
+
+background:#D5B743;
+
+}
+
+/* CARRUSEL */
+
+.carousel{
+
+display:flex;
+gap:20px;
+
+overflow-x:auto;
+scroll-behavior:smooth;
+
+padding-bottom:10px;
+
+}
+
+/* SCROLLBAR MÁS LIMPIO */
+
+.carousel::-webkit-scrollbar{
+height:8px;
+}
+
+.carousel::-webkit-scrollbar-thumb{
+background:#D5B743;
+border-radius:10px;
+}
+
+/* CARD */
+
+.carousel > *{
+
+flex:0 0 320px;
+
+}
+.hero-title:hover{
+
+  background: color-mix(in srgb, var(--verde), transparent 50%);
+
+  transform: translateX(10px);
+
+}
+.hero-line{
+height:2px;
+background:linear-gradient(
+90deg,
+transparent,
+var(--dorado),
+transparent
+);
+margin:18px auto;
+}

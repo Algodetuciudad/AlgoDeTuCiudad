@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root {
+  --verde: #1B3B22;
+  --crema: #F2EFE2;
+  --dorado: #D4B74D;
+  --dorado-oscuro: #A68A42;
+}
+
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+
+.header {
+  background: var(--verde);
+  color: white;
+  padding: 15px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.menu a:hover {
+  color: var(--dorado);
+}
+
+/* HERO */
+
+.hero{
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-title{
+  font-size: 4rem;
+  color:white;
+  padding:20px 40px;
+
+  background: var(--dorado);
+
+  border-radius:6px;
+
+  transition: all 0.4s ease;
+
+  backdrop-filter: blur(3px);
+}
+
+/* animación hover */
+
+.hero-main {
+  height: 400px;
+  background: url("https://picsum.photos/800/600") center/cover;
+  display: flex;
+  align-items: end;
+  padding: 30px;
+  color: white;
+}
+
+.hero-main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
+.hero-side {
+  display: grid;
+  gap: 15px;
+}
+
+.hero-card {
+  background: url("https://picsum.photos/400/300") center/cover;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: end;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+/* NEWS */
+
+.section-title {
+  margin-top: 30px;
+  border-left: 6px solid var(--dorado);
+  padding-left: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.news-item {
+  display: flex;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+.news-item img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-content h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* PAGINATION */
+
+.pagination {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 3px;
+  border: none;
+  background: var(--verde);
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background: var(--dorado);
+}
+
+/* FOOTER */
+.container{
+
+padding:40px 60px;
+
+}
+
+/* TITULO */
+
+.section-title{
+
+font-family:"Maden";
+font-size:32px;
+margin-bottom:20px;
+
+}
+
+/* CARRUSEL */
+
+.carousel{
+
+display:flex;
+gap:20px;
+
+overflow-x:auto;
+scroll-behavior:smooth;
+
+padding-bottom:10px;
+
+}
+
+/* SCROLLBAR MÁS LIMPIO */
+
+.carousel::-webkit-scrollbar{
+height:8px;
+}
+
+.carousel::-webkit-scrollbar-thumb{
+background:#D5B743;
+border-radius:10px;
+}
+
+/* CARD */
+
+.carousel > *{
+
+flex:0 0 320px;
+
+}
+.footer {
+  background: var(--verde);
+  color: white;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer a {
+  display: block;
+  color: var(--dorado);
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 20px;
+}
+/* TRANSICIONES GENERALES */
+
+.news-item,
+.hero-card,
+.hero-main {
+  transition: all 0.3s ease;
+}
+
+/* ANIMACIÓN TARJETAS NOTICIAS */
+
+.news-item {
+  display: flex;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.news-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ZOOM IMAGEN */
+
+.news-item img {
+  width: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.news-item:hover img {
+  transform: scale(1.1);
+}
+
+/* TÍTULO ANIMADO */
+
+.news-content h3 {
+  font-family: 'Playfair Display', serif;
+  transition: color 0.3s ease;
+}
+
+.news-item:hover h3 {
+  color: var(--dorado);
+}
+
+/* HERO PRINCIPAL */
+
+.hero-main {
+  position: relative;
+  height: 400px;
+  background: url("https://picsum.photos/800/600") center/cover;
+  display: flex;
+  align-items: end;
+  padding: 30px;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.hero-main:hover::before {
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-main h1 {
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  transition: transform 0.3s ease;
+}
+
+.hero-main:hover h1 {
+  transform: translateY(-5px);
+}
+
+/* HERO TARJETAS */
+
+.hero-card {
+  background: url("https://picsum.photos/400/300") center/cover;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: end;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.hero-card:hover::before {
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-card:hover {
+  transform: scale(1.03);
+}
+.news-item {
+  animation: fadeUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.news-item:nth-child(1) { animation-delay: 0.1s; }
+.news-item:nth-child(2) { animation-delay: 0.2s; }
+.news-item:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.pagination button {
+  padding: 8px 12px;
+  margin: 3px;
+  border: none;
+  background: var(--verde);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+  background: var(--dorado);
+  transform: translateY(-2px);
+}
