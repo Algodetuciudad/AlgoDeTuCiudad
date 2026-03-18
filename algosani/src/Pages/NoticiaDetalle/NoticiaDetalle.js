@@ -45,7 +45,7 @@ return(
 
 <div className="detalle-banner">
 
-<img src={noticia.img2}/>
+<img src={noticia.img2} alt={noticia.titulo}/>
 
 </div>
 
@@ -62,7 +62,7 @@ return(
 <img
 className="detalle-foto"
 src={noticia.img}
-alt=""
+alt={noticia.titulo}
 />
 
 <p className="detalle-texto">

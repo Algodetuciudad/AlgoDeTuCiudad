@@ -10,7 +10,7 @@ return(
 <div className="date-badge">
 {noticia.fecha}
 </div>
-<img src={noticia.img}/>
+<img src={noticia.img} alt={noticia.titulo}/>
 <h3>{noticia.titulo} </h3>
 
 </div>
