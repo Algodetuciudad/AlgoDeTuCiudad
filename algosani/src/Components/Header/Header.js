@@ -42,6 +42,25 @@ className={location.pathname === "/sanMiguel" ? "active" : ""}
 >
 San Miguel
 </Link>
+<Link
+to="/VicenteLopez"
+className={location.pathname === "/VicenteLopez" ? "active" : ""}
+>
+Vicente Lopez
+</Link>
+<Link
+to="/Tigre"
+className={location.pathname === "/Tigre" ? "active" : ""}
+>
+Tigre
+</Link>
+<Link
+to="/sanFernando"
+className={location.pathname === "/sanFernando" ? "active" : ""}
+>
+San Fernando
+</Link>
+
 <a
 href="https://mail.google.com/mail/?view=cm&fs=1&to=Algodetuciudad@gmail.com"
 className={location.pathname === "/sanMiguel" ? "active" : ""}
