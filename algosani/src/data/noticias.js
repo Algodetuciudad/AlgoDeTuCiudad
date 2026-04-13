@@ -137,7 +137,7 @@ export const noticias = [
   {
     id: 16,
     titulo: "Tigre debutó en la Sudamericana con un valioso empate en Perú",
-    img: "/img/tigre/image4.PNG",
+    img: "/img/tigre/image4.png",
     img2: "/img/sides/_APP6728.jpg",
     fecha: "07-04-2026",
     contenido: "El Matador inició su camino en la Copa Sudamericana igualando 1-1 ante Alianza Atlético de Sullana en Perú. Ignacio Russo fue el autor del gol para el equipo dirigido por Diego Dabove. Con este resultado, Tigre suma su primer punto internacional del año. Ahora, el equipo se prepara para enfrentar a Atlético Tucumán por el torneo local este domingo.",
