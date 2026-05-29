@@ -1,5 +1,6 @@
 
 import NewsCard from "../../Components/NewCard"
+import VideoBanner from "../../Components/VideoBanner"
 import {noticias} from "../../data/noticias"
 
 export default function Home(){
@@ -21,6 +22,8 @@ Noticias, historias y comunidad desde la mirada de los vecinos
 </p>
 
 </div>
+<VideoBanner className="video-banner-wrapper"/>
+
 <div className="hero"
 style={{backgroundImage:"url('/img/Algo - Manual_page-0029.jpg')"}}
 >
