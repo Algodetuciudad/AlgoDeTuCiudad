@@ -41,12 +41,24 @@ style={{backgroundImage:"url('/img/Algo - Manual_page-0029.jpg')"}}
 
 <h2 className="section-title">Últimas noticias San Isidro</h2>
 
-<div className="carousel">
+<div className="news-row">
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario San Isidro"
+  />
 
-{noticias.filter(n => n.ciudad === "San Isidro").map(n => (
-<NewsCard key={n.id} noticia={n}/>
-))}
+  <div className="carousel">
+    {noticias.filter(n => n.ciudad === "San Isidro").map(n => (
+      <NewsCard key={n.id} noticia={n} />
+    ))}
+  </div>
 
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario San Isidro"
+  />
 </div>
 
 </div>
@@ -68,12 +80,24 @@ style={{backgroundImage:"url('/img/Algo - Manual_page-0022.jpg')"}}
 
 <h2 className="section-title">Últimas noticias San Miguel</h2>
 
-<div className="carousel">
+<div className="news-row">
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario San Miguel"
+  />
 
-{noticias.filter(n => n.ciudad === "San Miguel").map(n => (
-<NewsCard key={n.id} noticia={n}/>
-))}
+  <div className="carousel">
+    {noticias.filter(n => n.ciudad === "San Miguel").map(n => (
+      <NewsCard key={n.id} noticia={n} />
+    ))}
+  </div>
 
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario San Miguel"
+  />
 </div>
 </div>
 
@@ -93,13 +117,26 @@ style={{backgroundImage:"url('/img/1440x810_30643432_museo-de-san-fernando-munic
 <div className="container">
 <h2 className="section-title">Últimas noticias San Fernando</h2>
 
-<div className="carousel">
+<div className="news-row">
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario San Fernando"
+  />
 
-{noticias.filter(n => n.ciudad === "San Fernando").map(n => (
-<NewsCard key={n.id} noticia={n}/>
-))}
+  <div className="carousel">
+    {noticias.filter(n => n.ciudad === "San Fernando").map(n => (
+      <NewsCard key={n.id} noticia={n} />
+    ))}
+  </div>
 
-</div></div>
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario San Fernando"
+  />
+</div>
+</div>
 <div className="hero"
 style={{backgroundImage:"url('/img/Café_de_París_en_Vicente_López,_Provincia_de_Buenos_Aires.jpg')"}}
 >
@@ -114,11 +151,26 @@ style={{backgroundImage:"url('/img/Café_de_París_en_Vicente_López,_Provincia_
 <div className="container">
 <h2 className="section-title">Últimas noticias Vicente López</h2>
 
-<div className="carousel">
-{noticias.filter(n => n.ciudad === "Vicente Lopez").map(n => (
-<NewsCard key={n.id} noticia={n}/>
-))}
-</div></div>
+<div className="news-row">
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario Vicente López"
+  />
+
+  <div className="carousel">
+    {noticias.filter(n => n.ciudad === "Vicente Lopez").map(n => (
+      <NewsCard key={n.id} noticia={n} />
+    ))}
+  </div>
+
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario Vicente López"
+  />
+</div>
+</div>
 <div className="hero"
 style={{backgroundImage:"url('/img/Estación_Tigre_-_panoramio.jpg')"}}
 >
@@ -131,12 +183,27 @@ style={{backgroundImage:"url('/img/Estación_Tigre_-_panoramio.jpg')"}}
 </div>
 <div className="hero-line"></div>
 <div className="container">
-<h2 className="section-title">Últimas noticias Tigre</h2> 
-<div className="carousel">
-{noticias.filter(n => n.ciudad === "Tigre").map(n => (
-<NewsCard key={n.id} noticia={n}/>
-))}
-</div></div>
+<h2 className="section-title">Últimas noticias Tigre</h2>
+<div className="news-row">
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario Tigre"
+  />
+
+  <div className="carousel">
+    {noticias.filter(n => n.ciudad === "Tigre").map(n => (
+      <NewsCard key={n.id} noticia={n} />
+    ))}
+  </div>
+
+  <VideoBanner
+    variant="side"
+    src="/img/OEA_300x250_logo.gif"
+    alt="Banner publicitario Tigre"
+  />
+</div>
+</div>
 </div>
 
 

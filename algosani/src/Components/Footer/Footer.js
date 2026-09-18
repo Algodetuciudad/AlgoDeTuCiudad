@@ -1,10 +1,12 @@
 import React from 'react';
 import './Footer.css';
+import VideoBanner from "../../Components/VideoBanner"
 
 function Footer(){
 
     return (
            <footer className="footer">
+
         <div className="container footer-grid">
 
           <div>
@@ -22,7 +24,7 @@ function Footer(){
           </div>
 
         </div>
-
+            <VideoBanner className="video-banner-wrapper"/>
         <div className="copy">
           © 2026 Algo de tu Ciudad
         </div>
